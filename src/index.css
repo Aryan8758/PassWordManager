@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --text-white: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.7);
+  --accent: #4fc3f7;
+  --error: #ff5252;
+  --success: #69f0ae;
+}
+
+body {
+  background-color: #1a1a2e;
+  background-image: 
+    radial-gradient(circle at 20% 20%, #16213e 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, #0f3460 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #533483 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-white);
+  min-height: 100vh;
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-white);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  color: white;
+}
+
+.glass-input:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.1);
+}

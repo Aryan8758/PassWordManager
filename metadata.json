@@ -1,0 +1,6 @@
+{
+  "name": "DeptFlow - Department Data Manager",
+  "description": "A secure, local-first department data management tool with authentication and real-time search.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
